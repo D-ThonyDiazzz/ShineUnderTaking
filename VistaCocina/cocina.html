@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shines Undertaking - Repostería</title>
+    <link rel="stylesheet" href="../EstiloGeneral.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="../Index.html">Shines Undertaking</a>
+            <!-- MODIFICAR: Cambia el nombre del brand aquí -->
+        </div>
+        <ul class="nav-menu">
+            <li><a href="../Index.html">Inicio</a></li>
+            <!-- MODIFICAR: Puedes cambiar el texto del menú aquí -->
+            <li><a href="#contacto">Contacto</a></li>
+            <li>
+                <select id="catalog-select" onchange="navigateCategory(this.value)">
+                    <option value="">Secciones</option>
+                    <option value="../VistaCocina/cocina.html">Repostería</option>
+                    <option value="../VistaComputacion/computacion.html">Computación</option>
+                    <option value="../VistaCosmetologia/cosmetologia.html">Cosmetología</option>
+                    <!-- MODIFICAR: Cambia los nombres de las opciones aquí -->
+                </select>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="page-header cocina">
+        <h1>Repostería Artesanal</h1>
+        <!-- MODIFICAR: Cambia el título principal aquí -->
+        <p>Descubre nuestros deliciosos productos de repostería</p>
+        <!-- MODIFICAR: Cambia la descripción aquí -->
+    </header>
+
+    <main class="products-container">
+        <!-- Producto 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../Cocina/producto1.jpg" alt="Producto 1">
+                <!-- MODIFICAR: Cambia "../Cocina/producto1.jpg" por tu imagen -->
+            </div>
+            <div class="product-info">
+                <h3>Torta de Chocolate</h3>
+                <!-- MODIFICAR: Cambia el nombre del producto aquí -->
+                <p class="product-description">Deliciosa torta de chocolate con cobertura de ganache y decoraciones personalizadas</p>
+                <!-- MODIFICAR: Cambia la descripción del producto aquí -->
+                <p class="product-price cocina">S/. 45.00</p>
+                <!-- MODIFICAR: Cambia el precio aquí -->
+                <button class="btn-buy cocina">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../Cocina/producto2.jpg" alt="Producto 2">
+                <!-- MODIFICAR: Cambia "../Cocina/producto2.jpg" por tu imagen -->
+            </div>
+            <div class="product-info">
+                <h3>Cupcakes Variados</h3>
+                <!-- MODIFICAR: Cambia el nombre del producto aquí -->
+                <p class="product-description">Set de 6 cupcakes con diferentes sabores y decoraciones artesanales</p>
+                <!-- MODIFICAR: Cambia la descripción del producto aquí -->
+                <p class="product-price cocina">S/. 30.00</p>
+                <!-- MODIFICAR: Cambia el precio aquí -->
+                <button class="btn-buy cocina">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../Cocina/producto3.jpg" alt="Producto 3">
+                <!-- MODIFICAR: Cambia "../Cocina/producto3.jpg" por tu imagen -->
+            </div>
+            <div class="product-info">
+                <h3>Galletas Decoradas</h3>
+                <!-- MODIFICAR: Cambia el nombre del producto aquí -->
+                <p class="product-description">Galletas artesanales con decoración personalizada para cualquier ocasión</p>
+                <!-- MODIFICAR: Cambia la descripción del producto aquí -->
+                <p class="product-price cocina">S/. 25.00</p>
+                <!-- MODIFICAR: Cambia el precio aquí -->
+                <button class="btn-buy cocina">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../Cocina/producto4.jpg" alt="Producto 4">
+                <!-- MODIFICAR: Cambia "../Cocina/producto4.jpg" por tu imagen -->
+            </div>
+            <div class="product-info">
+                <h3>Pie de Limón</h3>
+                <!-- MODIFICAR: Cambia el nombre del producto aquí -->
+                <p class="product-description">Exquisito pie de limón con merengue italiano tostado</p>
+                <!-- MODIFICAR: Cambia la descripción del producto aquí -->
+                <p class="product-price cocina">S/. 35.00</p>
+                <!-- MODIFICAR: Cambia el precio aquí -->
+                <button class="btn-buy cocina">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 5 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../Cocina/producto5.jpg" alt="Producto 5">
+                <!-- MODIFICAR: Cambia "../Cocina/producto5.jpg" por tu imagen -->
+            </div>
+            <div class="product-info">
+                <h3>Macarons Franceses</h3>
+                <!-- MODIFICAR: Cambia el nombre del producto aquí -->
+                <p class="product-description">Set de 12 macarons en diferentes sabores y colores vibrantes</p>
+                <!-- MODIFICAR: Cambia la descripción del producto aquí -->
+                <p class="product-price cocina">S/. 40.00</p>
+                <!-- MODIFICAR: Cambia el precio aquí -->
+                <button class="btn-buy cocina">Comprar</button>
+            </div>
+        </div>
+
+        <!-- Producto 6 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="../Cocina/producto6.jpg" alt="Producto 6">
+                <!-- MODIFICAR: Cambia "../Cocina/producto6.jpg" por tu imagen -->
+            </div>
+            <div class="product-info">
+                <h3>Cheesecake de Frutos Rojos</h3>
+                <!-- MODIFICAR: Cambia el nombre del producto aquí -->
+                <p class="product-description">Cremoso cheesecake con salsa de frutos rojos naturales</p>
+                <!-- MODIFICAR: Cambia la descripción del producto aquí -->
+                <p class="product-price cocina">S/. 38.00</p>
+                <!-- MODIFICAR: Cambia el precio aquí -->
+                <button class="btn-buy cocina">Comprar</button>
+            </div>
+        </div>
+
+        <!-- MODIFICAR: Copia y pega más bloques .product-card para agregar más productos -->
+    </main>
+
+    <section id="contacto" class="contact-section">
+        <h2>Contacto</h2>
+        <!-- MODIFICAR: Cambia el título de contacto aquí -->
+        <p>Email: contacto@shines.com</p>
+        <!-- MODIFICAR: Cambia el email aquí -->
+        <p>Teléfono: +51 999 999 999</p>
+        <!-- MODIFICAR: Cambia el teléfono aquí -->
+        <p>WhatsApp: +51 999 999 999</p>
+        <!-- MODIFICAR: Cambia el WhatsApp aquí -->
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Shines Undertaking. Todos los derechos reservados.</p>
+        <!-- MODIFICAR: Cambia el texto del footer aquí -->
+    </footer>
+
+    <script src="cocina.js"></script>
+</body>
+</html>
